@@ -1,0 +1,73 @@
+$plain-white: #fff;
+$plain-black: #000;
+$subtext-gray: #777;
+$border-gray: #eaeaea;
+$hover-blue: #222;
+
+$navbar-default-bg: $plain-black;
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+
+#logo {
+  color: $plain-white;
+  float: left;
+  font-size: 1.7em;
+  font-weight: bold;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+
+  hover {
+    color: $plain-white;
+    text-decoration: none;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+.jumbotron {
+  background-image: asset-url('new_cover_page.jpg');
+  background-size: cover;
+  height: 550px;
+
+  h1 {
+    color: $plain-white;
+    font-weight: bold;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
+.btn-xlarge {
+  background-color: $plain-black;
+  font-size: 1.7em;
+}
+
+.footer {
+  border-top: 1px solid $border-gray;
+  color: $subtext-gray;
+  margin-top: 45px;
+  padding-top: 5px;
+
+  a:hover {
+    color: $hover-blue;
+  }
+
+  small {
+    float: left;
+  }
+
+  ul {
+    float: right;
+    list-style: none;
+
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+  }
+}
