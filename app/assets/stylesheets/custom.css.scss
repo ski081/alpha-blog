@@ -57,14 +57,14 @@ $navbar-default-bg: $plain-black;
 }
 
 .article-title {
-  font-weight: bold;
   font-size: 1.5em;
+  font-weight: bold;
 }
 
 .article-body {
   border-top: 1px solid $border-gray;
-  padding-top: 15px;
   padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 .article-meta-details {
@@ -77,14 +77,27 @@ $navbar-default-bg: $plain-black;
   padding-left: 0;
 }
 
+.badge {
+  background-color: #CEF6F5;
+  font-weight: bold;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+.input_checkbox input {
+  width: auto !important;
+}
+
 .footer {
   border-top: 1px solid $border-gray;
   color: $subtext-gray;
   margin-top: 45px;
   padding-top: 5px;
 
-  a:hover {
-    color: $hover-blue;
+  a {
+    :hover {
+      color: $hover-blue;
+    }
   }
 
   small {
